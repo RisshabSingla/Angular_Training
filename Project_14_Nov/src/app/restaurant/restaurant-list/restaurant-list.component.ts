@@ -712,4 +712,8 @@ export class RestaurantListComponent {
       "cuisines": "Federated Premier Municipal Income Fund"
     }]
   }
+
+  onClickedRestaurant(id: string){
+    console.log(id)
+  }
 }

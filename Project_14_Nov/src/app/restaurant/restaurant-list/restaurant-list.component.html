@@ -1,5 +1,11 @@
 <div class="flex flex-wrap gap-4">
-  <div *ngFor="let restaurant of restaurantLists" class="restaurant">
+  <div
+    *ngFor="let restaurant of restaurantLists"
+    class="restaurant"
+    (click)="onClickedRestaurant(restaurant.id.$oid)"
+    routerLink="/details/{{ restaurant.id.$oid }}"
+  >
+    >
     <img src="https://picsum.photos/200" />
     <p class="restaurant__name">{{ restaurant.restaurantName }}</p>
     <p class="restaurant__address">Address: {{ restaurant.address }}</p>
