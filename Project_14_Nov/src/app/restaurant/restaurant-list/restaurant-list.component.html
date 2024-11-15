@@ -1,1 +1,8 @@
-<p>restaurant-list works!</p>
+<div class="flex flex-wrap gap-4">
+  <div *ngFor="let restaurant of restaurantLists" class="restaurant">
+    <img src="https://picsum.photos/200" />
+    <p class="restaurant__name">{{ restaurant.restaurantName }}</p>
+    <p class="restaurant__address">Address: {{ restaurant.address }}</p>
+    <p class="restaurant__cuisines">Cuisines: {{ restaurant.cuisines }}</p>
+  </div>
+</div>
